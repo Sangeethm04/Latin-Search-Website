@@ -138,6 +138,7 @@ table, th, td {
 
 input[type=text] {
   background-image: url('searchicon.png');
+  margin-top: 15px;
   width: 226px;
   box-sizing: border-box;
   border: 2px solid black;

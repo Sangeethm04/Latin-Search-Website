@@ -3,6 +3,7 @@ function myFunction() {
   var input, filter, ul, li, a, i, txtValue;
   input = document.getElementById('myInput');
   filter = input.value.toUpperCase();
+  //filter = input.value.replace(new RegExp(/\s/g),"");
   ul = document.getElementById("myUL");
   li = ul.getElementsByTagName('li');
 
@@ -10,7 +11,9 @@ function myFunction() {
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    var taxtValue = txtValue.toLocaleUpperCase();
+    var took = taxtValue.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    if (took.indexOf(filter) > -1) {
       li[i].style.display = "";
     } else {
       li[i].style.display = "none";
@@ -18,16 +21,5 @@ function myFunction() {
   }
 }
 
-const copyText = document.getElementById("myInputs");
 
-copyText.onclick = function() {
-  
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
 
-  /* Copy the text inside the text field */
-  document.execCommand("copy");
-
-  /* Alert the copied text */
-  alert("Copied the text: " + copyText.value) 
-}
