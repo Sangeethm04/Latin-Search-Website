@@ -41,16 +41,6 @@
   color: white;
 }
 
-/*.search input[type=text] {
-  float: left;
-  padding: 6px;
-  /*border: none;*/
-  /*margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
-  align-self: center;
-}*/
-
 .listview {
   margin-top: 90px;
   margin-left: -90px;
@@ -124,18 +114,6 @@ table, th, td {
   right: 5500px
 }
 
-/*#myInput {
-  /*background-image: url('/css/searchicon.png'); /* Add a search icon to input */
- /* background-position: 10px 12px; /* Position the search icon */
-  /*background-repeat: no-repeat; /* Do not repeat the icon image */
-  /*width: 50%; /* Full-width */
-  
-  /*border-radius: 5px;
-  padding: 12px 20px 12px 40px; /* Add some padding */
- /* border: 1px solid #ddd; /* Add a grey border */
- /* margin-bottom: 12px; /* Add some space below the input */
-/*}*/
-
 input[type=text] {
   background-image: url('searchicon.png');
   margin-top: 15px;
@@ -155,7 +133,7 @@ input[type=text] {
 
 /* When the input field gets focus, change its width to 100% */
 input[type=text]:focus {
-  width: 97%;
+  width: 100%;
   border: 2px solid red
 }
 
