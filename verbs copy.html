@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Verbs | Latin Vocabulary/Notes</title>
+    <link rel="shortcut icon" type="image/png" href="Assets/accessories-dictionary.png">
+    <!--Footer Style-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <body id="bod"class="scroll">
+      <a href="index.html"
+      ><div style="margin-top: -85px;"id="logo"> 
+        <img href="index.html"class="ribbon" src="Assets/accessories-dictionary.png" alt="Latin Dictionary" width="80" height="80"> 
+      </div>
+      </a>
+    <div data-role="page" id="page-container">
+        <div class="key" data-role="header" border-radius: 5px;>
+            <h1>Verb Notes</h1>
+    <div class="topnav">
+        <a href="index.html">Dictionary</a>
+        <a href="nouns.html">Nouns</a>
+        <a class="active" href="verbs.html">Verbs</a>
+        <a href="pronoun.html">Pronoun</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div>
+
+        <div id="login_div" class="main-div">
+          <h3 style="text-align: center;">Login</h3>
+          <input type="email" placeholder="Email..." id="email_field" />
+          <input type="password" placeholder="Password..." id="password_field" />
+      
+          <button onclick="login()">Login to Account</button>
+        </div>
+      
+        <div id="user_div" class="loggedin-div">
+          <h3>Welcome User</h3>
+          <p id="user_para">Welcome. You're currently logged in.</p>
+          <img style="margin-bottom: 8px;"class="poststyle" src="assets/yes meme.png" alt="40 Days Lent Flyer">
+          <button onclick="logout()">Logout</button>
+        </div>
+      
+      </div>
+      
+      
+      
+      
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyDoliYBjKZbRBW5pRramf4pchC3G_aKaEI",
+          authDomain: "divine-mercy-b265e.firebaseapp.com",
+          projectId: "divine-mercy-b265e",
+          storageBucket: "divine-mercy-b265e.appspot.com",
+          messagingSenderId: "705545618281",
+          appId: "1:705545618281:web:92a9bf8211579bz83d673f8",
+          measurementId: "G-73GKVKXLWR"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        </script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAyo3FHdkg7l60eS0Gsq6KH02BbtNtDPJU",
+    authDomain: "latin-dictionary-1fd92.firebaseapp.com",
+    projectId: "latin-dictionary-1fd92",
+    storageBucket: "latin-dictionary-1fd92.appspot.com",
+    messagingSenderId: "598009407755",
+    appId: "1:598009407755:web:589c3769455eca68d99a0e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+        <script src="index2.js"></script>
+      
+      </body>
+      </html>
+      
