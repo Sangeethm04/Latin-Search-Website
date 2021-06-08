@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Menachery Official</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="Assets/IMG_3997.JPG">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1 style="text-align:center;">Menachery Family</h1>
+    </div>
+
+  <div class="navbar">
+      <a href="/"class="active">Home</a>
+      <a href="images.html">Images</a>
+      <a href="videos.html">Videos</a>
+      <a href="contact.html">Contact</a>
+  </div>  
+
+  <div class="main">
+
+    <input type="text" placeholder="name" id="namefield">
+    <input type="text" placeholder="message" id="messagefield">
+    <button onclick="writeData()">Submit</button>
+  </div>
+
+  <div class="footer">
+      <hr>
+      <p>
+      <a style="text-decoration: underline;" href="images.html"><u>Images</u></a> |
+      <a style="text-decoration: underline;" href="videos.html"><u>Videos</u></a> |
+      <a style="text-decoration: underline;" href="contact.html"><u>Contact</u></a>
+    </p>
+    <p>
+        &copy;2021 by Menachery Family.
+    </p>
+  </div>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBsR3nrtnSeLLCYHcevpcK0FZCY6QOjr10",
+    authDomain: "menacheryofficial.firebaseapp.com",
+    projectId: "menacheryofficial",
+    storageBucket: "menacheryofficial.appspot.com",
+    messagingSenderId: "759804031681",
+    appId: "1:759804031681:web:823a1757f57f84974a5a40"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  function writeData() {
+    firebase.writeData().ref("User").push({
+        name: document.getElementById("namefield").value,
+        message: document.getElementById("messagefield").value
+    });
+}   console.log("Working");
+
+</script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
