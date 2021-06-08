@@ -1,0 +1,166 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Divine Prayer Center</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="chaplet-of-the-divine-mercy-divine-mercy-divine-mercy-sunday-png-divine-mercy-image-png-728_593.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/6d2be967aa.js" crossorigin="anonymous"></script>
+
+
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H3VRV8J4HW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-H3VRV8J4HW');
+</script>
+
+  <style>
+            html, body {
+          max-width:100%;
+          overflow-x:hidden;
+        }
+
+    body {
+  background: #fff;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+input, button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.main-div, .loggedin-div {
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .main-div, .loggedin-div {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  display: none;
+}
+}
+
+.main-div input {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div input:focus {
+  border: 1px solid #777;
+}
+
+.main-div button, .loggedin-div button {
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div button:hover, .loggedin-div button:hover {
+  background: #fff;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+  cursor: pointer;
+}
+
+  </style>
+
+</head>
+
+<link rel="stylesheet" href="styles.css">
+
+<body style="background-color: rgb(255, 255, 255); overflow-x: hidden;">
+
+  <!--Header-->
+  <div class="head" data-role="header" >
+    <h1 style="margin-top: 15px;font-size: 23px; padding: 0px 0px 2px 0px; border-radius: 5px; border:3px; border-style:solid; border-color:#FF0000; padding: .3em; width: fit-content; position: relative; margin-bottom:-1%; margin-left: .5%;">I am the Lord who heals you (Exodus 15:26)</h1>
+    <h1 class="maintext"style="text-align: center; margin-top: 0.7%; margin-bottom: 1%;">Divine Prayer Center</h1>
+    
+ </div>
+    <!--Tabs-->
+<div class="topnav">
+    <a  href="/">Home</a>
+    <a  href="about.html">About</a>
+    <a  href="ministries.html">Ministries</a>
+    <a  href="testimony.html">Testimonies</a>
+    <a  class="active" href="articles.html">Articles</a>
+    <a  href="contact.html">Contact</a>
+    <div class="topnav-right">
+    <a style="width: auto; height: 48px; transform: translate(0px, 0.2px);"class="fab fa-paypal" href="https://www.paypal.com/donate?token=4Ym1H4QDBK6GYvuoRwebn42jegeqVsAs-3LSv0Xh0mOrRHctvSnv9WYnswwYAph6A17qrgpqpLrK3CHh">  Donate</a>
+    <a href="https://www.youtube.com/channel/UCnxcnQtQv7EVis2MImW0Gjw" class="fa fa-youtube"></a>
+    </div>
+</div>
+
+  <div>
+
+  <div id="login_div" class="main-div">
+    <h3 style="text-align: center;">Login</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome. You're currently logged in.</p>
+    <img style="margin-bottom: 8px;"class="poststyle" src="assets/yes meme.png" alt="40 Days Lent Flyer">
+    <button onclick="logout()">Logout</button>
+  </div>
+
+</div>
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDoliYBjKZbRBW5pRramf4pchC3G_aKaEI",
+    authDomain: "divine-mercy-b265e.firebaseapp.com",
+    projectId: "divine-mercy-b265e",
+    storageBucket: "divine-mercy-b265e.appspot.com",
+    messagingSenderId: "705545618281",
+    appId: "1:705545618281:web:92a9bf8211579bz83d673f8",
+    measurementId: "G-73GKVKXLWR"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="index2.js"></script>
+
+</body>
+</html>
