@@ -41,6 +41,16 @@
   color: white;
 }
 
+.active2 {
+  background-color: rgba(228, 37, 3, 0.835);
+  color: white;
+}
+
+.active2:hover {
+  background-color: rgba(228, 37, 3, 0.835);
+  color: black;
+}
+
 .listview {
   margin-top: 90px;
   margin-left: -90px;

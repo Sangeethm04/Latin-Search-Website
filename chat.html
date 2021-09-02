@@ -1,80 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Menachery Official</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" type="image/png" href="Assets/IMG_3997.JPG">
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-    </style>
-</head>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Nouns | Latin Dictionary/Notes</title>
+    <!--Footer Style-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="Assets/accessories-dictionary.png">
+    <link rel="stylesheet" href="index.css">
+    <!-- Google fonts. -->
+    <link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'/>
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'/>
+    <!-- Use font awesome icons. -->
+    <script src="https://kit.fontawesome.com/6d2be967aa.js" crossorigin="anonymous"></script>
+    <!-- Use firebase app and database. -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
 
-    <div>
-        <h1 style="text-align:center;">Menachery Family</h1>
+    <!-- The CSS and JS file must be declared after the things above-->
+    <link rel="stylesheet" href="styles.css"/>
+    <script type="text/javascript" src="chatscript.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-43DQRH9MQN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-43DQRH9MQN');
+    </script>
+  </head>
+  <body>
+    <div id="bod">
+      <a href="index.html"
+      ><div style="margin-top: -85px;"id="logo"> 
+        <img href="index.html"class="ribbon" src="Assets/accessories-dictionary.png" alt="Latin Dictionary" width="80" height="80"> 
+      </div>
+      </a>
+    <div data-role="page" id="page-container">
+        <div class="key" data-role="header" border-radius: 5px;>
+            <h1 class="nounss">Noun Endings</h1>
+    <div class="topnav">
+            <a href="index.html">Dictionary</a>
+            <a class="active" href="nouns.html">Nouns</a>
+            <a href="active-verbs.html">Active Verbs</a>
+            <a href="passive-verbs.html">Passive Verbs</a>
+            <a href="pronoun.html">Pronoun</a>
+            <a href="adjectives.html">Adjectives</a>
+            <a href="contact.html">Contact</a>
+      </div>
     </div>
-
-  <div class="navbar">
-      <a href="/"class="active">Home</a>
-      <a href="images.html">Images</a>
-      <a href="videos.html">Videos</a>
-      <a href="contact.html">Contact</a>
-  </div>  
-
-  <div class="main">
-
-    <input type="text" placeholder="name" id="namefield">
-    <input type="text" placeholder="Message" id="messagefield">
-    <button onclick="writeData()">Submit</button>
-  </div>
-
-  <div class="footer">
+    </div>
+    <footer style="text-decoration: none;"id="footer">
       <hr>
-      <p>
-      <a style="text-decoration: underline;" href="images.html"><u>Images</u></a> |
-      <a style="text-decoration: underline;" href="videos.html"><u>Videos</u></a> |
-      <a style="text-decoration: underline;" href="contact.html"><u>Contact</u></a>
-    </p>
-    <p>
-        &copy;2021 by Menachery Family.
-    </p>
-  </div>
-
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBsR3nrtnSeLLCYHcevpcK0FZCY6QOjr10",
-    authDomain: "menacheryofficial.firebaseapp.com",
-    projectId: "menacheryofficial",
-    storageBucket: "menacheryofficial.appspot.com",
-    messagingSenderId: "759804031681",
-    appId: "1:759804031681:web:823a1757f57f84974a5a40"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-
-  function writeData() {
-    firebase.database().ref("User").set({
-        name: document.getElementById("namefield").value,
-        message: document.getElementById("messagefield").value
-    });
-}   console.log("Working");
-
-</script>
-<script src="script.js"></script>
-
-
-</body>
+      <p>Latin Dictionary/Notes</p>
+          <p>Email: schery004@gmail.com     |    <a class="text-decoration:none;" href="contact.html"><u>Contact</u></a>  </p>
+        <p>&copy;<script> document.write(new Date().getFullYear())</script> by Sangeeth Menachery. | Data by Ms. Mullay</p>
+      </footer>
+  </body>
 </html>
