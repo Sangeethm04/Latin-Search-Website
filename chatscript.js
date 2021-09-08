@@ -39,7 +39,7 @@ window.onload = function() {
   
         var title = document.createElement('h1')
         title.setAttribute('id', 'title')
-        title.textContent = 'Sangeeth Menachery'
+        title.textContent = 'Online Latin Chat'
   
         title_inner_container.append(title)
         title_container.append(title_inner_container)
@@ -123,12 +123,7 @@ window.onload = function() {
       create_chat(){
         // Again! You need to have (parent = this)
         var parent = this;
-        // GET THAT MEMECHAT HEADER OUTTA HERE
-        var title_container = document.getElementById('title_container')
-        var title = document.getElementById('title')
-        title_container.classList.add('chat_title_container')
-        // Make the title smaller by making it 'chat_title'
-        title.classList.add('chat_title')
+
   
         var chat_container = document.createElement('div')
         chat_container.setAttribute('id', 'chat_container')
