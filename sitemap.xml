@@ -9,67 +9,117 @@
 
 <url>
   <loc>https://www.latindictionarynotes.com/</loc>
-  <lastmod>2021-09-14T19:52:52+00:00</lastmod>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.latindictionarynotes.com/nouns</loc>
-  <lastmod>2021-09-14T19:52:52+00:00</lastmod>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.latindictionarynotes.com/active-verbs</loc>
-  <lastmod>2021-09-14T19:52:52+00:00</lastmod>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.latindictionarynotes.com/passive-verbs</loc>
-  <lastmod>2021-09-14T19:52:52+00:00</lastmod>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.latindictionarynotes.com/pronoun</loc>
-  <lastmod>2021-09-14T19:52:52+00:00</lastmod>
+  <loc>https://www.latindictionarynotes.com/subjunctiveverbs</loc>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.latindictionarynotes.com/generalverbs</loc>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.latindictionarynotes.com/general2verbs</loc>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.latindictionarynotes.com/adjectives</loc>
-  <lastmod>2021-09-14T19:52:52+00:00</lastmod>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.latindictionarynotes.com/compsuper</loc>
-  <lastmod>2021-09-14T19:52:52+00:00</lastmod>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.latindictionarynotes.com/indirectstatement</loc>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.latindictionarynotes.com/purposeclause</loc>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.latindictionarynotes.com/pronoun</loc>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.latindictionarynotes.com/reflexivepronouns</loc>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.latindictionarynotes.com/contact</loc>
-  <lastmod>2021-09-14T19:52:52+00:00</lastmod>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.latindictionarynotes.com/chat</loc>
-  <lastmod>2021-09-14T19:52:52+00:00</lastmod>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.latindictionarynotes.com/login</loc>
-  <lastmod>2021-09-14T19:52:52+00:00</lastmod>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.latindictionarynotes.com/Assets/Latin%20Verb%20Chart%20-%20Active.pdf</loc>
-  <lastmod>2021-09-14T19:52:52+00:00</lastmod>
+  <loc>https://www.latindictionarynotes.com/Verbs-%20active.pdf</loc>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.latindictionarynotes.com/Verbs-%20passive%20(1).pdf</loc>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.latindictionarynotes.com/SUBJUNCTIVE%20ACTIVE%20AND%20PASSIVE%20(1).pdf</loc>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.latindictionarynotes.com/Tenses.pdf</loc>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.latindictionarynotes.com/Translating%20Verb%20Tenses_.pdf</loc>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.latindictionarynotes.com/Assets/3rd%20Declension%20Adjectives%20Explanation.pdf</loc>
-  <lastmod>2021-09-14T19:52:52+00:00</lastmod>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.latindictionarynotes.com/contact.html</loc>
-  <lastmod>2021-09-14T19:52:52+00:00</lastmod>
+  <loc>https://www.latindictionarynotes.com/Review%20indirect%20statement.pdf</loc>
+  <lastmod>2021-12-28T16:15:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
