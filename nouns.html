@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="Assets/accessories-dictionary.png">
     <link rel="stylesheet" href="index.css">
+        <!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-43DQRH9MQN"></script>
 <script>
@@ -29,19 +31,47 @@
     <div data-role="page" id="page-container">
         <div class="key" data-role="header" border-radius: 5px;>
             <h1 class="nounss">Noun Endings</h1>
-    <div class="topnav">
-            <a href="index.html">Dictionary</a>
-            <a class="active" href="nouns.html">Nouns</a>
-            <a href="active-verbs.html">Active Verbs</a>
-            <a href="passive-verbs.html">Passive Verbs</a>
-            <a href="pronoun.html">Pronoun</a>
-            <a href="adjectives.html">Adjectives</a>
-            <a href="compsuper.html">Comp & Superlative Adj</a>
-            <a href="contact.html">Contact</a>
-            <div style="float: right;">
-              <a target="_blank" class="active2" href="chat.html">Chat</a>
+            <div class="navbar">
+              <a href="/">Dictionary</a>
+              <a href="nouns.html">Nouns</a>
+              <div class="subnav">
+                <button class="subnavbtn">Verbs <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                  <a href="active-verbs.html">Active</a>
+                  <a href="passive-verbs.html">Passive</a>
+                  <a href="subjunctiveverbs.html">Subjunctive Active & Passive</a>
+                  <a href="generalverbs.html">General</a>
+                  <a href="general2verbs.html">General 2</a>
+                </div>
+              </div>
+              
+              <div class="subnav">
+                <button class="subnavbtn">Adjectives <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content"> 
+                  <a href="adjectives.html">Regular</a>
+                  <a href="compsuper.html">Comparative & Superlative</a>
+                 
+                </div>
+              </div>
+              <div class="subnav">
+                <button class="subnavbtn">Misc Grammar <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                  <a href="indirectstatement.html">Indirect Statement</a>
+                  <a href="purposeclause.html">Purpose Clause</a>
+                </div>
+              </div>
+              <div class="subnav">
+                <button class="subnavbtn">Pronouns <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                  <a href="pronoun.html">Pronoun Notes</a>
+                  <a href="reflexivepronouns.html">Reflexive Pronouns</a>
+                </div>
+              </div>
+              <a href="contact.html">Contact</a>
+              <div style="float: right;">
+                  <a target="_blank" class="active2" href="chat.html">Chat</a>
+                </div>
             </div>
-      </div>
     </div>
 
     <div id="main">
