@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
 
+    <!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-43DQRH9MQN"></script>
   <script>
@@ -30,17 +33,18 @@
   <body id="bod"class="scroll">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
-    <a href="/"
-    ><div style="margin-top: -85px;"id="logo"> 
+    <a href="/">
+      <div style="margin-top: -85px;"id="logo"> 
       <img href="/"class="ribbon" src="Assets/accessories-dictionary.png" alt="Latin Dictionary" width="80" height="80"> 
     </div>
     </a>
+    
         <div data-role="page" id="page-container">
             <div class="key" data-role="header">
                 <h1 class="maintext">Latin Dictionary</h1>
             </div>
-            <div class="container">
-              <div class="topnav">
+           <div class="container">
+            <!--    <div class="topnav">
                 <a class="active" href="/">Dictionary</a>
                 <a href="nouns.html">Nouns</a>
                 <a href="active-verbs.html">Active Verbs</a>
@@ -53,6 +57,36 @@
                   <a target="_blank" class="active2" href="chat.html">Chat</a>
                 </div>
               </div>
+            </div>
+
+            The navigation menu -->
+
+            <div class="navbar">
+              <a href="/">Dictionary</a>
+              <div class="subnav">
+                <button class="subnavbtn">Verbs <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                  <a href="active-verbs.html">Active Verbs</a>
+                  <a href="passive-verbs.html">Passive Verbs</a>
+                </div>
+              </div>
+              <div class="subnav">
+                <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                  <a href="#bring">Bring</a>
+                  <a href="#deliver">Deliver</a>
+                  <a href="#package">Package</a>
+                  <a href="#express">Express</a>
+                </div>
+              </div>
+              <div class="subnav">
+                <button class="subnavbtn">Adjectives <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                  <a href="#link1">Link 1</a>
+                  <a href="#link2">Link 2</a>
+                </div>
+              </div>
+              <a href="contact.html">Contact</a>
             </div>
 
             <div id="main">
