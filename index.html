@@ -44,464 +44,404 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="script.js"></script>
-  <a href="/">
-    <div style="margin-top: -85px;" id="logo">
-      <img href="/" class="ribbon" src="Assets/accessories-dictionary.png" alt="Latin Dictionary" width="80" height="80"
-        alt="latindictionarynotes.com official logo">
+
+  <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/global/php/"; include($IPATH."headernav.html"); ?>
+
+  <div id="main">
+    <div data-role="main" class="ui-content" id="contant-wrap">
+
+      <form action="action_page.php" autocomplete="false">
+        <input type="text" name="search" onkeyup="myFunction()" placeholder="Search..." id="myInput"
+          autocomplete="false">
+      </form>
+      <ul id="myUL" class="lis">
+        <li><a>aqua, aquae – f – water</a></li>
+        <li><a>īnsula, īnsulae – f – island</a></li>
+        <li><a>mundus, mundī – m – world</a></li>
+        <li><a>populus, populī – m – people</a></li>
+        <li><a>terra, terrae – f – land, country</a></li>
+        <li><a>magnus, magna, (magnum) – great, big, large</a></li>
+        <li><a>multus, multa, (multum) – much (sg), many (pl)</a></li>
+        <li><a>parvus, parva, (parvum) - small</a></li>
+        <li><a>est – is (there, he, she, it)</a></li>
+        <li><a>sunt – are (there, they)</a></li>
+        <li><a>aut – or</a></li>
+        <li><a>etiam – also, even</a></li>
+        <li><a>in – preposition taking ablative case - in or on</a></li>
+        <li><a>fāmae – f – fame, report</a></li>
+        <li><a>familia, familiae – f – family, household</a></li>
+        <li><a>fēmīna, fēmīnae – f – woman</a></li>
+        <li><a>fortūna, fortūnae – f – luck, fortune</a></li>
+        <li><a>puella, puellae – f - girl</a></li>
+        <li><a>silva, silvae – f – forest, woods</a></li>
+        <li><a>via, viae – f – way, road, street</a></li>
+        <li><a>vīta, vītae – f - life</a></li>
+        <li><a>bonus, bona, (bonum) - good</a></li>
+        <li><a>dūrus, dūra, (dūrum) – hard, harsh</a></li>
+        <li><a>novus, nova, (novum) – new, strange</a></li>
+        <li><a>ambulat – he/she/it walks</a></li>
+        <li><a>ambulant – they walk</a></li>
+        <li><a>docet – he/she/it teaches</a></li>
+        <li><a>docent – they teach</a></li>
+        <li><a>portat – he/she/it carries</a></li>
+        <li><a>portant – they carry</a></li>
+        <li><a>videt – he/she/it sees</a></li>
+        <li><a>vident – they see</a></li>
+        <li><a>casa, casae - f – house</a></li>
+        <li><a>lingua, linguae –f – language, tongue</a></li>
+        <li><a>littera, litterae –f – sg – single letter of alphabet</a></li>
+        <li><a>ambulō, ambulāre, ambulāvī, ambulātus - walk</a></li>
+        <li><a>amō, amāre, amāvī, amātus – love, like</a></li>
+        <li><a>parō, parāre, parāvī, parātus – prepare, get</a></li>
+        <li><a>portō, portāre, portāvī, portātus – carry</a></li>
+        <li><a>labōrō, labōrāre, labōrāvī, labōrātus – work</a></li>
+        <li><a>spectō, spectāre, spectāvī, spectātus – watch, look at</a></li>
+        <li><a>doceō, docēre, docuī, doctus – teach</a></li>
+        <li><a>terreō, terrēre, terruī, territus – scare, frighten</a></li>
+        <li><a>habeō, habēre, habuī, habitus – have</a></li>
+        <li><a>video, vidēre, vīdī, vīsus – see</a></li>
+        <li><a>agricola, agricolae – m – farmer</a></li>
+        <li><a>amīcus, amīcī – m – friend</a></li>
+        <li><a>carrus, carrī – m – cart, wagon</a></li>
+        <li><a>cibus, cibī – m – food</a></li>
+        <li><a>equus, equī – m – horse</a></li>
+        <li><a>servus, servī – m – slave</a></li>
+        <li><a>malus, mala, (malum) – bad, evil</a></li>
+        <li><a>Rōmānus, Rōmāna, (Rōmānum) – Roman</a></li>
+        <li><a>habitō, habitāre, habitāvī, habitātus – live, dwell</a></li>
+        <li><a>sedeō, sedēre, sēdī, sessūrus – sit</a></li>
+        <li><a>ātrium, ātrī –n – entryway, foyer</a></li>
+        <li><a>impluvium, impluvī – n – shallow pool in atrium</a></li>
+        <li><a>compluvium, compluvī – n – opening in the roof above impluvium</a></li>
+        <li><a>tablīnum, tablīnī – n – office</a></a></li>
+        <li><a>triclīnium, triclīnī – n – diningroom</a></li>
+        <li><a>culīna, culīnae – f – kitchen</a></li>
+        <li><a>latrīna, latrīnae – f - bathroom</a></li>
+        <li><a>ala, alae – f – wing, alcove</a></li>
+        <li><a>cubiculum, cubiculī – n – bedroom</a></li>
+        <li><a>peristylum, peristylī – n – colonnaded courtyard</a></li>
+        <li><a>hortus, hortī – m – garden</a></li>
+        <li><a>fīlia, fīliae – f – daughter</a></li>
+        <li><a>fīlius, fīlī – m – son</a></li>
+        <li><a>māter, matris – f – mother</a></li>
+        <li><a>pater, patris – m – father</a></li>
+        <li><a>frāter, frātris – m – brother</a></li>
+        <li><a>soror, sorōris – f – sister</a></li>
+        <li><a>dea, deae – f- goddess </a></li>
+        <li><a>deus, deī – m – god</a></li>
+        <li><a>fābula, fābulae – f – story</a></li>
+        <li><a>līberī, līberōrum – m – children</a></li>
+        <li><a>rēgīna, rēgīnae –f – queen</a></li>
+        <li><a>rēx, rēgis – m – king</a></li>
+        <li><a>vir, virī – m – man, hero </a></li>
+        <li><a>laudō, laudāre, laudāvī, laudātus – praise </a></li>
+        <li><a>nārrō, nārrāre, nārrāvī, nārrātus – tell </a></li>
+        <li><a>ad + acc – to, toward, near</a></li>
+        <li><a>cum + abl – with </a></li>
+        <li><a>dē + abl – about, concerning</a></li>
+        <li><a>caelum, caelī – n - sky</a></li>
+        <li><a>dōlum, dōlī – n – trick, deception, fraud</a></li>
+        <li><a>fōrma, fōrmae – f – shape, form</a></li>
+        <li><a>pugna, pugnae – f – fight, battle</a></li>
+        <li><a>amīcus, amīca, amīcum - friendly</a></li>
+        <li><a>clārus, clāra, clārum – famous, clear</a></li>
+        <li><a>grātus, grāta, grātum – pleasing, grateful</a></li>
+        <li><a>longus, longa, longum – long</a></li>
+        <li><a>pulcher, pulchra, pulchrum – beautiful, pretty, handsome</a></li>
+        <li><a>dēbeō, dēbēre, dēbuī, dēbitus – owe, ought</a></li>
+        <li><a>fōrmō, fōrmāre, fōrmāvī, fōrmātus – make, shape, fashion</a></li>
+        <li><a>līberō, līberāre, līberāvī, līberātus – free</a></li>
+        <li><a>pugnō, pugnāre, pugnāvī, pugnātus - fight</a></li>
+        <li><a>bellum, bellī –n – war</a></li>
+        <li><a>cōpia, cōpiae –f – supply, abundance, plenty</a></li>
+        <li><a>frūmentum, frūmentī – n - grain</a></li>
+        <li><a>meus, mea, meum – my, mine</a></li>
+        <li><a>clāmō, clāmāre, clāmāvī, clāmātus – shout, yell</a></li>
+        <li><a>dō, dare, dedī, datus - give</a></li>
+        <li><a>mōnstrō, mōnstrāre, mōnstrāvī, mōnstrātus – show</a></li>
+        <li><a>respondeō, respondēre, respondī, responsus – reply, answer, respond</a></li>
+        <li><a>temptō, temptāre, temptāvī, temptātus – try</a></li>
+        <li><a>iterum – again</a></li>
+        <li><a>-que – and (it’ll be attached to the second word)</a></li>
+        <li><a>somnus, somnī – m – sleep</a></li>
+        <li><a>stella, stellae –f – star</a></li>
+        <li><a>unda, undae –f – wave</a></li>
+        <li><a>verbum, verbī – n – word</a></li>
+        <li><a>templum, templī – n - temple</a></li>
+        <li><a>necō, necāre, necāvī, necātus - kill</a></li>
+        <li><a>teneō, tenēre, tenuī, tentus - hold</a></li>
+        <li><a>vocō, vocāre, vocāvī, vocātus - call</a></li>
+        <li><a>deinde (adv) = then</a></li>
+        <li><a>dē + abl = down from, from, or about</a></li>
+        <li><a>ā, ab + abl = away from, from</a></li>
+        <li><a>ē, ex + abl = out from, out of, from</a></li>
+        <li><a>captīvus, captīvī – m – prisoner</a></li>
+        <li><a>oppidum, oppidī – n – town</a></li>
+        <li><a>patria, patriae – f – country, fatherland </a></li>
+        <li><a>socius, socī – m – comrade, ally</a></li>
+        <li><a>altus, alta, altum – high, deep, tall</a></li>
+        <li><a>tuus, tua, tuum – your, yours (sg)</a></li>
+        <li><a>agō, agere, ēgī, actus – do, drive, live, discuss, spend </a></li>
+        <li><a>dēfendō, dēfendere, dēfendī, dēfensus – defend</a></li>
+        <li><a>dīcō, dīcere, dīxī, dictus – say, tell</a></li>
+        <li><a>mittō, mittere, mīsī, missus – send</a></li>
+        <li><a>pōnō, pōnere, posuī, positus – put, place</a></li>
+        <li><a>sum, esse, fuī, futūrus – to be</a></li>
+        <li><a>saepe – often (adv)</a></li>
+        <li><a>mox – soon (adv)</a></li>
+        <li><a>ager, agrī – m – field, farm</a></li>
+        <li><a>animus, animī – m – mind, courage, spirit</a></li>
+        <li><a>annus, annī – m – year</a></li>
+        <li><a>puer, puerī – m – boy</a></li>
+        <li><a>barbarus, barbara, barbarum - foreign</a></li>
+        <li><a>līber, lībera, līberum – free</a></li>
+        <li><a>sacer, sacra, sacrum – sacred</a></li>
+        <li><a>cēdō, cēdere, cessī, cessūrus – move, retreat, yield</a></li>
+        <li><a>dūcō, dūcere, dūxī, ductus – lead</a></li>
+        <li><a>legō, legere, lēgī, lectus – read, gather, choose, collect</a></li>
+        <li><a>scrībō, scrībere, scrīpsī, scrīptus – write</a></li>
+        <li><a>liber, librī – m – book </a></li>
+        <li><a>lūdus, lūdī – m - school</a></li>
+        <li><a>magister, magistrī – m – teacher</a></li>
+        <li><a>proelium, proelī – n - battle</a></li>
+        <li><a>victōria, victōriae – f- victory</a></li>
+        <li><a>medius, media, medium – middle, middle of</a></li>
+        <li><a>tardus, tarda, tardum – late, slow</a></li>
+        <li><a>vērus, vēra, vērum – true</a></li>
+        <li><a>capiō, capere, cēpī, captus – seize, take</a></li>
+        <li><a>accipiō, accipere, accēpī, acceptus – receive</a></li>
+        <li><a>faciō, facere, fēcī, factus – make, do</a></li>
+        <li><a>veniō, venīre, vēnī, ventūrus – come</a></li>
+        <li><a>inveniō, invenīre, invēnī, inventus – find, come upon</a></li>
+        <li><a>causa, causae - f – cause, reason</a></li>
+        <li><a>locus, locī – m – place (in the pl – it changes to neuter)</a></li>
+        <li><a>numerus, numerī – m – number</a></li>
+        <li><a>praemium, praemī, - n – reward</a></li>
+        <li><a>prīmus, prīma, prīmum – first</a></li>
+        <li><a>secundus, secunda, secundum – second</a></li>
+        <li><a>tertius, tertia, tertium – third</a></li>
+        <li><a>āmittō, āmittere, āmīsī, āmissus – lose, send away</a></li>
+        <li><a>maneō, manēre, mānsī, mānsūrus – stay, remain</a></li>
+        <li><a>crās – tomorrow</a></li>
+        <li><a>herī – yesterday</a></li>
+        <li><a>hodiē – today</a></li>
+        <li><a>Quis – who?</a></li>
+        <li><a>Quid – what?</a></li>
+        <li><a>Quot – how many?</a></li>
+        <li><a>Cūr – why?</a></li>
+        <li><a>Quō modō – how?</a></li>
+        <li><a>Ubi – where?</a></li>
+        <li><a>arma, armōrum – n – arms, weapons (pl)</a></li>
+        <li><a>castra, castrōrum – n – camp</a></li>
+        <li><a>forum, forī – n – marketplace, Forum</a></li>
+        <li><a>labor, labōris – m – work, task</a></li>
+        <li><a>officium, officī – n – duty, responsibility, office</a></li>
+        <li><a>virtūs, virtūtis – f – courage</a></li>
+        <li><a>inimīcus, inimīca, inimīcum – unfriendly, hostile</a></li>
+        <li><a>lātus, lāta, lātum – wide</a></li>
+        <li><a>accēdō, accēdere, accessī, accessūrus – approach</a></li>
+        <li><a>excēdō, excēdere, excessī, excessūrus – depart</a></li>
+        <li><a>gerō, gerere, gessī, gestus – bear, carry, wage</a></li>
+        <li><a>incipiō, incipere, incēpī, inceptus – begin, undertake</a></li>
+        <li><a>trahō, trahere, trāxī, trāctus – drag, pull</a></li>
+        <li><a>vulnerō, vulnerāre, vulnerāvī, vulnerātus - wound</a></li>
+        <li><a>cōnsilium, cōnsilī – n – plan, advice</a></li>
+        <li><a>pecūnia, pecūniae – f – money</a></li>
+        <li><a>perīculum, perīculī – n - danger</a></li>
+        <li><a>urbs, urbis – f – city</a></li>
+        <li><a>aeternus, aeterna, aeternum – eternal, everlasting</a></li>
+        <li><a>perpetuus, perpetua, perpetuum – constant</a></li>
+        <li><a>audiō, audīre, audīvī, audītus – hear</a></li>
+        <li><a>conveniō, convenīre, convēnī, conventūrus – come together</a></li>
+        <li><a>currō, currere, cucurrī, cursūrus – run</a></li>
+        <li><a>pellō, pellere, pepulī, pulsus – push, drive</a></li>
+        <li><a>regō, regere, rēxī, rēctus – rule, guide</a></li>
+        <li><a>caput, capitis – n – head</a></li>
+        <li><a>corpus, corporis – n – body</a></li>
+        <li><a>flūmen, flūminis – n – river</a></li>
+        <li><a>iter, itineris – n – journey, route</a></li>
+        <li><a>nōmen, nōminis – n – name</a></li>
+        <li><a>tempus, temporis – n – time</a></li>
+        <li><a>vulnus, vulneris – n – wound</a></li>
+        <li><a>victor, victōris – m – victor, winner</a></li>
+        <li><a>sānus, sāna, sānum – sound, healthy</a></li>
+        <li><a>inter + acc = between, among, amongst</a></li>
+        <li><a>premō, premere, pressī, pressus = press, push</a></li>
+        <li><a>rapiō, rapere, rapuī, raptus = steal, snatch</a></li>
+        <li><a>cīvis, cīvis, cīvium – f/m – citizen</a></li>
+        <li><a>fīnis, fīnis, fīnium –m – border, boundary, end</a></li>
+        <li><a>hostis, hostis, hostium – m – enemy (national)</a></li>
+        <li><a>ignis, ignis, ignium – m – fire</a></li>
+        <li><a>mōns, montis, montium – m – mountain</a></li>
+        <li><a>mors, mortis, mortium – f- death</a></li>
+        <li><a>nāvis, nāvis, nāvium – f – ship</a></li>
+        <li><a>vīs…vīrēs, vīrium – f- strength, force</a></li>
+        <li><a>mare, maris, marium – n – sea</a></li>
+        <li><a>tantus, tanta, tantum – so great, such great, so much</a></li>
+        <li><a>relinquō, relinquere, relīquī, relīctus – leave behind, abandon</a></li>
+        <li><a>volvō, volvere, volvī, volūtus – roll</a></li>
+        <li><a>ācer, ācris, ācre – fierce, sharp, keen, bitter</a></li>
+        <li><a>celer, celeris, celere – swift, fast</a></li>
+        <li><a>facilis, facile – easy</a></li>
+        <li><a>difficilis, difficile – hard, difficult</a></li>
+        <li><a>fortis, forte – strong, brave</a></li>
+        <li><a>grāvis, grave – heavy, serious</a></li>
+        <li><a>omnis, omne – all, every</a></li>
+        <li><a>similis, simile – like, alike, similar (takes dative)</a></li>
+        <li><a>dissimilis, dissimile – unlike</a></li>
+        <li><a>pār, paris – equal</a></li>
+        <li><a>currō, currere, cucurrī, cursūrus – run</a></li>
+        <li><a>nāvigō, nāvigāre, nāvigāvī, nāvigātus - sail</a></li>
+        <li><a>vincō, vincere, vīcī, victus – conquer, defeat, overcome</a></li>
+        <li><a>clāmor, clāmōris – m –shout, loud noise</a></li>
+        <li><a>cor, cordis – n – heart</a></li>
+        <li><a>iūs, iūris –n – right, law</a></li>
+        <li><a>pectus, pectoris –n –chest, heart</a></li>
+        <li><a>nūllus, nūlla, nūllum – no, none</a></li>
+        <li><a>ūllus, ūlla, ūllum - any</a></li>
+        <li><a>iaciō, iacere, iēcī, iactus – throw</a></li>
+        <li><a>perficiō, perficere, perfēcī, perfectus –complete, finish</a></li>
+        <li><a>possum, posse, potuī – be able</a></li>
+        <li><a>ante + acc = before, in front of</a></li>
+        <li><a>ob + acc = on account of, because of </a></li>
+        <li><a>perīculum, perīculī – n – danger</a></li>
+        <li><a>praesidium, praesidī – n – guard, protection</a></li>
+        <li><a>miser, misera, miserum – unhappy, sad, poor</a></li>
+        <li><a>inimīcus, inimīca, inimīcum – unfriendly</a></li>
+        <li><a>nōscō, nōscere, nōvī, nōtus – learn (perf – know)</a></li>
+        <li><a>possum, posse, potuī - be able, can</a></li>
+        <li><a>prōcēdō, prōcēdere, prōcessī, prōcessūrus – go forward, advance</a></li>
+        <li><a>prōdūcō, prōdūcere, prōdūxī, prōductus – lead forth</a></li>
+        <li><a>retineō, retinēre, retinuī, retentus – hold back, keep</a></li>
+        <li><a>prō – + abl - on behalf of, for, before</a></li>
+        <li><a>sine - + abl - without</a></li>
+        <li><a>aut – or</a></li>
+        <li><a>aut…aut – either…or</a></li>
+        <li><a>et….et – both…and</a></li>
+        <li><a>neque (or nec) – and not, nor</a></li>
+        <li><a>neque…nec – neither…nor</a></li>
+        <li><a>iam - already, now</a></li>
+        <li><a>ego, meī – I, me</a></li>
+        <li><a>tū, tuī – you (sg)</a></li>
+        <li><a>nōs, nostrum – we, us</a></li>
+        <li><a>vōs, vestrum – you (pl)</a></li>
+        <li><a>is, ea, id – he, she it</a></li>
+        <li><a>aestās, aestātis – f – summer</a></li>
+        <li><a>autumnus, autumnī – m – fall, autumn</a></li>
+        <li><a>hiems, hiemis f – winter</a></li>
+        <li><a>vēr, vēris – n - spring</a></li>
+        <li><a>meus, mea, meum – my, mine</a></li>
+        <li><a>noster, nostra, nostrum – our, ours</a></li>
+        <li><a>tuus, tua, tuum – your (sg)</a></li>
+        <li><a>vester, vestra, vestrum – your (pl)</a></li>
+        <li><a>tangō, tangere, tetīgī, tactus - touch</a></li>
+        <li><a>cāsus, cāsūs – m – fall, chance, misfortune</a></li>
+        <li><a>exercitus, exercitūs – m – army</a></li>
+        <li><a>fluctus, fluctūs – m – wave</a></li>
+        <li><a>impetus, impetūs – m – attack</a></li>
+        <li><a>manus, manūs – f – hand, band</a></li>
+        <li><a>senātus, senātūs – m – senate</a></li>
+        <li><a>strepitus, strepitūs – m – noise</a></li>
+        <li><a>fulmen, fulminis – n – lightning</a></li>
+        <li><a>cor, cordis – n – heart</a></li>
+        <li><a>iūs, iūris –n – right, law</a></li>
+        <li><a>pectus, pectoris –n –chest, heart</a></li>
+        <li><a>ingēns, ingentis – huge, immense</a></li>
+        <li><a>cōnfirmō, cōnfirmāre, cōnfirmāvī, cōnfirmātus – strengthen, make firm, encourage</a></li>
+        <li><a>cupiō, cupere, cupīvī, cupītus – want, desire</a></li>
+        <li><a>contrā + acc = against</a></li>
+        <li><a>inter + acc = between, among</a></li>
+        <li><a>intrā + acc = within</a></li>
+        <li><a>aciēs, aciēī – f – battle line, line of sight</a></li>
+        <li><a>diēs, diēī – m – day</a></li>
+        <li><a>meridiēs, meridiēī – m – midday</a></li>
+        <li><a>rēs, reī – f – thing, matter, affair</a></li>
+        <li><a>speciēs, speciēī – f – appearance</a></li>
+        <li><a>spēs, speī – f – hope</a></li>
+        <li><a>dēpōnō, dēpōnere, dēposuī, dēpositus – put down, put away</a></li>
+        <li><a>fallō, fallere, fefellī, falsus – deceive</a></li>
+        <li><a>rapiō, rapere, rapuī, raptus – steal, carry off, snatch up</a></li>
+        <li><a>exitus, exitūs – m – exit, departure</a></li>
+        <li><a>nihil – (indecl) – n – nothing</a></li>
+        <li><a>occāsus, occāsūs – m – setting, downfall</a></li>
+        <li><a>onus, oneris – n – burden</a></li>
+        <li><a>opus, operis – n – work</a></li>
+        <li><a>passus, passūs – m – pace</a></li>
+        <li><a>pōns, pontis – m – bridge</a></li>
+        <li><a>audax, audācis – bold, daring</a></li>
+        <li><a>fidēlis, fidēle – faithful</a></li>
+        <li><a>potēns, potentis – powerful, capable</a></li>
+        <li><a>cōgō, cōgere, coēgī, coāctus – compel, force</a></li>
+        <li><a>occīdō, occīdere, occīdī, occīsus – kill</a></li>
+        <li><a>perveniō, pervenīre, pervēnī, perventūrus – arrive, come through</a></li>
+        <li><a>reddō, reddere, reddīdī, reddītus – give back, return</a></li>
+        <li><a>trādō, trādere, trādīdī, trādītus – hand over, hand down, surrender</a></li>
+        <li><a>celeritās, celeritātis – f – speed, swiftness</a></li>
+        <li><a>dolor, dolōris – m – pain, grief, distress</a></li>
+        <li><a>lūx, lūcis – f – light</a></li>
+        <li><a>virtūs, virtūtis – f- courage, valor</a></li>
+        <li><a>aperio, aperire, aperui, apertus - open, disclose</a></li>
+        <li><a>discedo, discedere, discessi, discessurus - depart</a></li>
+        <li><a>opprimō, opprimere, oppressī, oppressus – overwhelm</a></li>
+        <li><a>persuadeo, persuadere, persuasi, persuasus - persuade (takes dat)</a></li>
+        <li><a>frūstrā – in vain</a></li>
+        <li><a>tandem – finally</a></li>
+        <li><a>umquam – ever</a></li>
+        <li><a>numquam - never</a></li>
+        <li><a>igitur - therefore</a></li>
+        <li><a>dux, ducis, m – leader</a></li>
+        <li><a>homō, hominis, m – man, human being</a></li>
+        <li><a>lēx, lēgis, f – law</a></li>
+        <li><a>mīles, mīlitis, m – soldier</a></li>
+        <li><a>pāx, pācis, f – peace</a></li>
+        <li><a>salūs, salūtis, f – health, safety</a></li>
+        <li><a>miser, misera, miserum – sad, unhappy, poor</a></li>
+        <li><a>moveō, movēre, mōvī, mōtus – move</a></li>
+        <li><a>petō, petere, petīvī, petītus – seek, ask for, attack</a></li>
+        <li><a>quī, quae, quod – who, which, whom</a></li>
+        <li><a>claudō, claudere, clausī, clausus - close</a></li>
+        <li><a>includō, includere, inclusī, inclusus - shut in, close in, enclose</a></li>
+        <li><a>currō, currere, cucurrī, cursūrus – run</a></li>
+        <li><a>iubeō, iubēre, iussī, iussus – order (used with acc and infinitive – order ____ to ____)</a></li>
+        <li><a>volō, velle, voluī – wish, want (irregular)</a></li>
+        <li><a>ante + acc – before, in front of</a></li>
+        <li><a>in + acc - into</a></li>
+        <li><a>inter + acc – between</a></li>
+        <li><a>intrā + acc – within</a></li>
+        <li><a>ob + acc – on account of</a></li>
+        <li><a>per + acc – through</a></li>
+        <li><a>propter + acc - on account of; because of</a></li>
+        <li><a>sub + acc – under</a></li>
+        <li><a>trāns + acc - across</a></li>
+        <li><a>carmen, carminis – n – song</a></li>
+        <li><a>scientia, scientiae – f – knowledge</a></li>
+        <li><a>hic, haec, hoc – this, these</a></li>
+        <li><a>ille, illa, illud – that, those</a></li>
+        <li><a>ipse, ipsa, ipsum - -self, the very (one)</a></li>
+        <li><a>is, ea, id – he, she, it, this, that</a></li>
+        <li><a>īdem, eadem, idem – the same</a></li>
+        <li><a>frangō, frangere, frēgī, fractus – break</a></li>
+        <li><a>perveniō, pervenīre, pervēnī, perventūrus – arrive</a></li>
+        <li><a>remittō, remittere, remīsī, remissus – send back, send again, return</a></li>
+        <li><a>audāx, audacis – bold</a></li>
+        <li><a>humilis, humile – humble, low</a></li>
+        <li><a>levis, leve – light</a></li>
+        <li><a>potēns, potentis – powerful</a></li>
+        <li><a>arx, arcis – f- citadel</a></li>
+        <li><a>fidēs, fideī – f – faith</a></li>
+        <li><a>(mīlle passūs – 1 mile (lit. a thousand paces; mīlia passuum – miles)</a></li>
+        <li><a>dīligens, dīligentis – careful, accurate</a></li>
+        <li><a>prūdens, prūdentis – skilled, aware</a></li>
+        <li><a>quī, quae, quod – who, which, that</a></li>
+
+      </ul>
     </div>
-  </a>
+  </div>
 
-  <div data-role="page" id="page-container">
-    <div class="key" data-role="header">
-      <h1 class="maintext">Latin Dictionary</h1>
-    </div>
-    <div class="container">
+  <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/global/php/"; include($IPATH."footer.html"); ?>
 
-      <div class="navbar">
-        <a href="/">Dictionary</a>
-        <a href="nouns.html">Nouns</a>
-        <div class="subnav">
-          <button class="subnavbtn">Verbs <i class="fa fa-caret-down"></i></button>
-          <div class="subnav-content">
-            <a href="active-verbs.html">Active</a>
-            <a href="passive-verbs.html">Passive</a>
-            <a href="subjunctiveverbs.html">Subjunctive Active & Passive</a>
-            <a href="generalverbs.html">General</a>
-            <a href="general2verbs.html">General 2</a>
-          </div>
-        </div>
-
-        <div class="subnav">
-          <button class="subnavbtn">Adjectives <i class="fa fa-caret-down"></i></button>
-          <div class="subnav-content">
-            <a href="adjectives.html">Regular</a>
-            <a href="compsuper.html">Comparative & Superlative</a>
-
-          </div>
-        </div>
-        <div class="subnav">
-          <button class="subnavbtn">Misc Grammar <i class="fa fa-caret-down"></i></button>
-          <div class="subnav-content">
-            <a href="indirectstatement.html">Indirect Statement</a>
-            <a href="subjunctiveclauses.html">Subjunctive Clauses</a>
-          </div>
-        </div>
-        <div class="subnav">
-          <button class="subnavbtn">Pronouns <i class="fa fa-caret-down"></i></button>
-          <div class="subnav-content">
-            <a href="pronoun.html">Pronoun Notes</a>
-            <a href="reflexivepronouns.html">Reflexive Pronouns</a>
-          </div>
-        </div>
-        <a href="contact.html">Contact</a>
-        <div style="float: right;">
-          <a target="_blank" class="active2" href="chat.html">Chat</a>
-        </div>
-      </div>
-
-      <div id="main">
-        <div data-role="main" class="ui-content" id="contant-wrap">
-
-          <form action="action_page.php" autocomplete="false">
-            <input type="text" name="search" onkeyup="myFunction()" placeholder="Search..." id="myInput"
-              autocomplete="false">
-          </form>
-          <ul id="myUL" class="lis">
-            <li><a>aqua, aquae – f – water</a></li>
-            <li><a>īnsula, īnsulae – f – island</a></li>
-            <li><a>mundus, mundī – m – world</a></li>
-            <li><a>populus, populī – m – people</a></li>
-            <li><a>terra, terrae – f – land, country</a></li>
-            <li><a>magnus, magna, (magnum) – great, big, large</a></li>
-            <li><a>multus, multa, (multum) – much (sg), many (pl)</a></li>
-            <li><a>parvus, parva, (parvum) - small</a></li>
-            <li><a>est – is (there, he, she, it)</a></li>
-            <li><a>sunt – are (there, they)</a></li>
-            <li><a>aut – or</a></li>
-            <li><a>etiam – also, even</a></li>
-            <li><a>in – preposition taking ablative case - in or on</a></li>
-            <li><a>fāmae – f – fame, report</a></li>
-            <li><a>familia, familiae – f – family, household</a></li>
-            <li><a>fēmīna, fēmīnae – f – woman</a></li>
-            <li><a>fortūna, fortūnae – f – luck, fortune</a></li>
-            <li><a>puella, puellae – f - girl</a></li>
-            <li><a>silva, silvae – f – forest, woods</a></li>
-            <li><a>via, viae – f – way, road, street</a></li>
-            <li><a>vīta, vītae – f - life</a></li>
-            <li><a>bonus, bona, (bonum) - good</a></li>
-            <li><a>dūrus, dūra, (dūrum) – hard, harsh</a></li>
-            <li><a>novus, nova, (novum) – new, strange</a></li>
-            <li><a>ambulat – he/she/it walks</a></li>
-            <li><a>ambulant – they walk</a></li>
-            <li><a>docet – he/she/it teaches</a></li>
-            <li><a>docent – they teach</a></li>
-            <li><a>portat – he/she/it carries</a></li>
-            <li><a>portant – they carry</a></li>
-            <li><a>videt – he/she/it sees</a></li>
-            <li><a>vident – they see</a></li>
-            <li><a>casa, casae - f – house</a></li>
-            <li><a>lingua, linguae –f – language, tongue</a></li>
-            <li><a>littera, litterae –f – sg – single letter of alphabet</a></li>
-            <li><a>ambulō, ambulāre, ambulāvī, ambulātus - walk</a></li>
-            <li><a>amō, amāre, amāvī, amātus – love, like</a></li>
-            <li><a>parō, parāre, parāvī, parātus – prepare, get</a></li>
-            <li><a>portō, portāre, portāvī, portātus – carry</a></li>
-            <li><a>labōrō, labōrāre, labōrāvī, labōrātus – work</a></li>
-            <li><a>spectō, spectāre, spectāvī, spectātus – watch, look at</a></li>
-            <li><a>doceō, docēre, docuī, doctus – teach</a></li>
-            <li><a>terreō, terrēre, terruī, territus – scare, frighten</a></li>
-            <li><a>habeō, habēre, habuī, habitus – have</a></li>
-            <li><a>video, vidēre, vīdī, vīsus – see</a></li>
-            <li><a>agricola, agricolae – m – farmer</a></li>
-            <li><a>amīcus, amīcī – m – friend</a></li>
-            <li><a>carrus, carrī – m – cart, wagon</a></li>
-            <li><a>cibus, cibī – m – food</a></li>
-            <li><a>equus, equī – m – horse</a></li>
-            <li><a>servus, servī – m – slave</a></li>
-            <li><a>malus, mala, (malum) – bad, evil</a></li>
-            <li><a>Rōmānus, Rōmāna, (Rōmānum) – Roman</a></li>
-            <li><a>habitō, habitāre, habitāvī, habitātus – live, dwell</a></li>
-            <li><a>sedeō, sedēre, sēdī, sessūrus – sit</a></li>
-            <li><a>ātrium, ātrī –n – entryway, foyer</a></li>
-            <li><a>impluvium, impluvī – n – shallow pool in atrium</a></li>
-            <li><a>compluvium, compluvī – n – opening in the roof above impluvium</a></li>
-            <li><a>tablīnum, tablīnī – n – office</a></a></li>
-            <li><a>triclīnium, triclīnī – n – diningroom</a></li>
-            <li><a>culīna, culīnae – f – kitchen</a></li>
-            <li><a>latrīna, latrīnae – f - bathroom</a></li>
-            <li><a>ala, alae – f – wing, alcove</a></li>
-            <li><a>cubiculum, cubiculī – n – bedroom</a></li>
-            <li><a>peristylum, peristylī – n – colonnaded courtyard</a></li>
-            <li><a>hortus, hortī – m – garden</a></li>
-            <li><a>fīlia, fīliae – f – daughter</a></li>
-            <li><a>fīlius, fīlī – m – son</a></li>
-            <li><a>māter, matris – f – mother</a></li>
-            <li><a>pater, patris – m – father</a></li>
-            <li><a>frāter, frātris – m – brother</a></li>
-            <li><a>soror, sorōris – f – sister</a></li>
-            <li><a>dea, deae – f- goddess </a></li>
-            <li><a>deus, deī – m – god</a></li>
-            <li><a>fābula, fābulae – f – story</a></li>
-            <li><a>līberī, līberōrum – m – children</a></li>
-            <li><a>rēgīna, rēgīnae –f – queen</a></li>
-            <li><a>rēx, rēgis – m – king</a></li>
-            <li><a>vir, virī – m – man, hero </a></li>
-            <li><a>laudō, laudāre, laudāvī, laudātus – praise </a></li>
-            <li><a>nārrō, nārrāre, nārrāvī, nārrātus – tell </a></li>
-            <li><a>ad + acc – to, toward, near</a></li>
-            <li><a>cum + abl – with </a></li>
-            <li><a>dē + abl – about, concerning</a></li>
-            <li><a>caelum, caelī – n - sky</a></li>
-            <li><a>dōlum, dōlī – n – trick, deception, fraud</a></li>
-            <li><a>fōrma, fōrmae – f – shape, form</a></li>
-            <li><a>pugna, pugnae – f – fight, battle</a></li>
-            <li><a>amīcus, amīca, amīcum - friendly</a></li>
-            <li><a>clārus, clāra, clārum – famous, clear</a></li>
-            <li><a>grātus, grāta, grātum – pleasing, grateful</a></li>
-            <li><a>longus, longa, longum – long</a></li>
-            <li><a>pulcher, pulchra, pulchrum – beautiful, pretty, handsome</a></li>
-            <li><a>dēbeō, dēbēre, dēbuī, dēbitus – owe, ought</a></li>
-            <li><a>fōrmō, fōrmāre, fōrmāvī, fōrmātus – make, shape, fashion</a></li>
-            <li><a>līberō, līberāre, līberāvī, līberātus – free</a></li>
-            <li><a>pugnō, pugnāre, pugnāvī, pugnātus - fight</a></li>
-            <li><a>bellum, bellī –n – war</a></li>
-            <li><a>cōpia, cōpiae –f – supply, abundance, plenty</a></li>
-            <li><a>frūmentum, frūmentī – n - grain</a></li>
-            <li><a>meus, mea, meum – my, mine</a></li>
-            <li><a>clāmō, clāmāre, clāmāvī, clāmātus – shout, yell</a></li>
-            <li><a>dō, dare, dedī, datus - give</a></li>
-            <li><a>mōnstrō, mōnstrāre, mōnstrāvī, mōnstrātus – show</a></li>
-            <li><a>respondeō, respondēre, respondī, responsus – reply, answer, respond</a></li>
-            <li><a>temptō, temptāre, temptāvī, temptātus – try</a></li>
-            <li><a>iterum – again</a></li>
-            <li><a>-que – and (it’ll be attached to the second word)</a></li>
-            <li><a>somnus, somnī – m – sleep</a></li>
-            <li><a>stella, stellae –f – star</a></li>
-            <li><a>unda, undae –f – wave</a></li>
-            <li><a>verbum, verbī – n – word</a></li>
-            <li><a>templum, templī – n - temple</a></li>
-            <li><a>necō, necāre, necāvī, necātus - kill</a></li>
-            <li><a>teneō, tenēre, tenuī, tentus - hold</a></li>
-            <li><a>vocō, vocāre, vocāvī, vocātus - call</a></li>
-            <li><a>deinde (adv) = then</a></li>
-            <li><a>dē + abl = down from, from, or about</a></li>
-            <li><a>ā, ab + abl = away from, from</a></li>
-            <li><a>ē, ex + abl = out from, out of, from</a></li>
-            <li><a>captīvus, captīvī – m – prisoner</a></li>
-            <li><a>oppidum, oppidī – n – town</a></li>
-            <li><a>patria, patriae – f – country, fatherland </a></li>
-            <li><a>socius, socī – m – comrade, ally</a></li>
-            <li><a>altus, alta, altum – high, deep, tall</a></li>
-            <li><a>tuus, tua, tuum – your, yours (sg)</a></li>
-            <li><a>agō, agere, ēgī, actus – do, drive, live, discuss, spend </a></li>
-            <li><a>dēfendō, dēfendere, dēfendī, dēfensus – defend</a></li>
-            <li><a>dīcō, dīcere, dīxī, dictus – say, tell</a></li>
-            <li><a>mittō, mittere, mīsī, missus – send</a></li>
-            <li><a>pōnō, pōnere, posuī, positus – put, place</a></li>
-            <li><a>sum, esse, fuī, futūrus – to be</a></li>
-            <li><a>saepe – often (adv)</a></li>
-            <li><a>mox – soon (adv)</a></li>
-            <li><a>ager, agrī – m – field, farm</a></li>
-            <li><a>animus, animī – m – mind, courage, spirit</a></li>
-            <li><a>annus, annī – m – year</a></li>
-            <li><a>puer, puerī – m – boy</a></li>
-            <li><a>barbarus, barbara, barbarum - foreign</a></li>
-            <li><a>līber, lībera, līberum – free</a></li>
-            <li><a>sacer, sacra, sacrum – sacred</a></li>
-            <li><a>cēdō, cēdere, cessī, cessūrus – move, retreat, yield</a></li>
-            <li><a>dūcō, dūcere, dūxī, ductus – lead</a></li>
-            <li><a>legō, legere, lēgī, lectus – read, gather, choose, collect</a></li>
-            <li><a>scrībō, scrībere, scrīpsī, scrīptus – write</a></li>
-            <li><a>liber, librī – m – book </a></li>
-            <li><a>lūdus, lūdī – m - school</a></li>
-            <li><a>magister, magistrī – m – teacher</a></li>
-            <li><a>proelium, proelī – n - battle</a></li>
-            <li><a>victōria, victōriae – f- victory</a></li>
-            <li><a>medius, media, medium – middle, middle of</a></li>
-            <li><a>tardus, tarda, tardum – late, slow</a></li>
-            <li><a>vērus, vēra, vērum – true</a></li>
-            <li><a>capiō, capere, cēpī, captus – seize, take</a></li>
-            <li><a>accipiō, accipere, accēpī, acceptus – receive</a></li>
-            <li><a>faciō, facere, fēcī, factus – make, do</a></li>
-            <li><a>veniō, venīre, vēnī, ventūrus – come</a></li>
-            <li><a>inveniō, invenīre, invēnī, inventus – find, come upon</a></li>
-            <li><a>causa, causae - f – cause, reason</a></li>
-            <li><a>locus, locī – m – place (in the pl – it changes to neuter)</a></li>
-            <li><a>numerus, numerī – m – number</a></li>
-            <li><a>praemium, praemī, - n – reward</a></li>
-            <li><a>prīmus, prīma, prīmum – first</a></li>
-            <li><a>secundus, secunda, secundum – second</a></li>
-            <li><a>tertius, tertia, tertium – third</a></li>
-            <li><a>āmittō, āmittere, āmīsī, āmissus – lose, send away</a></li>
-            <li><a>maneō, manēre, mānsī, mānsūrus – stay, remain</a></li>
-            <li><a>crās – tomorrow</a></li>
-            <li><a>herī – yesterday</a></li>
-            <li><a>hodiē – today</a></li>
-            <li><a>Quis – who?</a></li>
-            <li><a>Quid – what?</a></li>
-            <li><a>Quot – how many?</a></li>
-            <li><a>Cūr – why?</a></li>
-            <li><a>Quō modō – how?</a></li>
-            <li><a>Ubi – where?</a></li>
-            <li><a>arma, armōrum – n – arms, weapons (pl)</a></li>
-            <li><a>castra, castrōrum – n – camp</a></li>
-            <li><a>forum, forī – n – marketplace, Forum</a></li>
-            <li><a>labor, labōris – m – work, task</a></li>
-            <li><a>officium, officī – n – duty, responsibility, office</a></li>
-            <li><a>virtūs, virtūtis – f – courage</a></li>
-            <li><a>inimīcus, inimīca, inimīcum – unfriendly, hostile</a></li>
-            <li><a>lātus, lāta, lātum – wide</a></li>
-            <li><a>accēdō, accēdere, accessī, accessūrus – approach</a></li>
-            <li><a>excēdō, excēdere, excessī, excessūrus – depart</a></li>
-            <li><a>gerō, gerere, gessī, gestus – bear, carry, wage</a></li>
-            <li><a>incipiō, incipere, incēpī, inceptus – begin, undertake</a></li>
-            <li><a>trahō, trahere, trāxī, trāctus – drag, pull</a></li>
-            <li><a>vulnerō, vulnerāre, vulnerāvī, vulnerātus - wound</a></li>
-            <li><a>cōnsilium, cōnsilī – n – plan, advice</a></li>
-            <li><a>pecūnia, pecūniae – f – money</a></li>
-            <li><a>perīculum, perīculī – n - danger</a></li>
-            <li><a>urbs, urbis – f – city</a></li>
-            <li><a>aeternus, aeterna, aeternum – eternal, everlasting</a></li>
-            <li><a>perpetuus, perpetua, perpetuum – constant</a></li>
-            <li><a>audiō, audīre, audīvī, audītus – hear</a></li>
-            <li><a>conveniō, convenīre, convēnī, conventūrus – come together</a></li>
-            <li><a>currō, currere, cucurrī, cursūrus – run</a></li>
-            <li><a>pellō, pellere, pepulī, pulsus – push, drive</a></li>
-            <li><a>regō, regere, rēxī, rēctus – rule, guide</a></li>
-            <li><a>caput, capitis – n – head</a></li>
-            <li><a>corpus, corporis – n – body</a></li>
-            <li><a>flūmen, flūminis – n – river</a></li>
-            <li><a>iter, itineris – n – journey, route</a></li>
-            <li><a>nōmen, nōminis – n – name</a></li>
-            <li><a>tempus, temporis – n – time</a></li>
-            <li><a>vulnus, vulneris – n – wound</a></li>
-            <li><a>victor, victōris – m – victor, winner</a></li>
-            <li><a>sānus, sāna, sānum – sound, healthy</a></li>
-            <li><a>inter + acc = between, among, amongst</a></li>
-            <li><a>premō, premere, pressī, pressus = press, push</a></li>
-            <li><a>rapiō, rapere, rapuī, raptus = steal, snatch</a></li>
-            <li><a>cīvis, cīvis, cīvium – f/m – citizen</a></li>
-            <li><a>fīnis, fīnis, fīnium –m – border, boundary, end</a></li>
-            <li><a>hostis, hostis, hostium – m – enemy (national)</a></li>
-            <li><a>ignis, ignis, ignium – m – fire</a></li>
-            <li><a>mōns, montis, montium – m – mountain</a></li>
-            <li><a>mors, mortis, mortium – f- death</a></li>
-            <li><a>nāvis, nāvis, nāvium – f – ship</a></li>
-            <li><a>vīs…vīrēs, vīrium – f- strength, force</a></li>
-            <li><a>mare, maris, marium – n – sea</a></li>
-            <li><a>tantus, tanta, tantum – so great, such great, so much</a></li>
-            <li><a>relinquō, relinquere, relīquī, relīctus – leave behind, abandon</a></li>
-            <li><a>volvō, volvere, volvī, volūtus – roll</a></li>
-            <li><a>ācer, ācris, ācre – fierce, sharp, keen, bitter</a></li>
-            <li><a>celer, celeris, celere – swift, fast</a></li>
-            <li><a>facilis, facile – easy</a></li>
-            <li><a>difficilis, difficile – hard, difficult</a></li>
-            <li><a>fortis, forte – strong, brave</a></li>
-            <li><a>grāvis, grave – heavy, serious</a></li>
-            <li><a>omnis, omne – all, every</a></li>
-            <li><a>similis, simile – like, alike, similar (takes dative)</a></li>
-            <li><a>dissimilis, dissimile – unlike</a></li>
-            <li><a>pār, paris – equal</a></li>
-            <li><a>currō, currere, cucurrī, cursūrus – run</a></li>
-            <li><a>nāvigō, nāvigāre, nāvigāvī, nāvigātus - sail</a></li>
-            <li><a>vincō, vincere, vīcī, victus – conquer, defeat, overcome</a></li>
-            <li><a>clāmor, clāmōris – m –shout, loud noise</a></li>
-            <li><a>cor, cordis – n – heart</a></li>
-            <li><a>iūs, iūris –n – right, law</a></li>
-            <li><a>pectus, pectoris –n –chest, heart</a></li>
-            <li><a>nūllus, nūlla, nūllum – no, none</a></li>
-            <li><a>ūllus, ūlla, ūllum - any</a></li>
-            <li><a>iaciō, iacere, iēcī, iactus – throw</a></li>
-            <li><a>perficiō, perficere, perfēcī, perfectus –complete, finish</a></li>
-            <li><a>possum, posse, potuī – be able</a></li>
-            <li><a>ante + acc = before, in front of</a></li>
-            <li><a>ob + acc = on account of, because of </a></li>
-            <li><a>perīculum, perīculī – n – danger</a></li>
-            <li><a>praesidium, praesidī – n – guard, protection</a></li>
-            <li><a>miser, misera, miserum – unhappy, sad, poor</a></li>
-            <li><a>inimīcus, inimīca, inimīcum – unfriendly</a></li>
-            <li><a>nōscō, nōscere, nōvī, nōtus – learn (perf – know)</a></li>
-            <li><a>possum, posse, potuī - be able, can</a></li>
-            <li><a>prōcēdō, prōcēdere, prōcessī, prōcessūrus – go forward, advance</a></li>
-            <li><a>prōdūcō, prōdūcere, prōdūxī, prōductus – lead forth</a></li>
-            <li><a>retineō, retinēre, retinuī, retentus – hold back, keep</a></li>
-            <li><a>prō – + abl - on behalf of, for, before</a></li>
-            <li><a>sine - + abl - without</a></li>
-            <li><a>aut – or</a></li>
-            <li><a>aut…aut – either…or</a></li>
-            <li><a>et….et – both…and</a></li>
-            <li><a>neque (or nec) – and not, nor</a></li>
-            <li><a>neque…nec – neither…nor</a></li>
-            <li><a>iam - already, now</a></li>
-            <li><a>ego, meī – I, me</a></li>
-            <li><a>tū, tuī – you (sg)</a></li>
-            <li><a>nōs, nostrum – we, us</a></li>
-            <li><a>vōs, vestrum – you (pl)</a></li>
-            <li><a>is, ea, id – he, she it</a></li>
-            <li><a>aestās, aestātis – f – summer</a></li>
-            <li><a>autumnus, autumnī – m – fall, autumn</a></li>
-            <li><a>hiems, hiemis f – winter</a></li>
-            <li><a>vēr, vēris – n - spring</a></li>
-            <li><a>meus, mea, meum – my, mine</a></li>
-            <li><a>noster, nostra, nostrum – our, ours</a></li>
-            <li><a>tuus, tua, tuum – your (sg)</a></li>
-            <li><a>vester, vestra, vestrum – your (pl)</a></li>
-            <li><a>tangō, tangere, tetīgī, tactus - touch</a></li>
-            <li><a>cāsus, cāsūs – m – fall, chance, misfortune</a></li>
-            <li><a>exercitus, exercitūs – m – army</a></li>
-            <li><a>fluctus, fluctūs – m – wave</a></li>
-            <li><a>impetus, impetūs – m – attack</a></li>
-            <li><a>manus, manūs – f – hand, band</a></li>
-            <li><a>senātus, senātūs – m – senate</a></li>
-            <li><a>strepitus, strepitūs – m – noise</a></li>
-            <li><a>fulmen, fulminis – n – lightning</a></li>
-            <li><a>cor, cordis – n – heart</a></li>
-            <li><a>iūs, iūris –n – right, law</a></li>
-            <li><a>pectus, pectoris –n –chest, heart</a></li>
-            <li><a>ingēns, ingentis – huge, immense</a></li>
-            <li><a>cōnfirmō, cōnfirmāre, cōnfirmāvī, cōnfirmātus – strengthen, make firm, encourage</a></li>
-            <li><a>cupiō, cupere, cupīvī, cupītus – want, desire</a></li>
-            <li><a>contrā + acc = against</a></li>
-            <li><a>inter + acc = between, among</a></li>
-            <li><a>intrā + acc = within</a></li>
-            <li><a>aciēs, aciēī – f – battle line, line of sight</a></li>
-            <li><a>diēs, diēī – m – day</a></li>
-            <li><a>meridiēs, meridiēī – m – midday</a></li>
-            <li><a>rēs, reī – f – thing, matter, affair</a></li>
-            <li><a>speciēs, speciēī – f – appearance</a></li>
-            <li><a>spēs, speī – f – hope</a></li>
-            <li><a>dēpōnō, dēpōnere, dēposuī, dēpositus – put down, put away</a></li>
-            <li><a>fallō, fallere, fefellī, falsus – deceive</a></li>
-            <li><a>rapiō, rapere, rapuī, raptus – steal, carry off, snatch up</a></li>
-            <li><a>exitus, exitūs – m – exit, departure</a></li>
-            <li><a>nihil – (indecl) – n – nothing</a></li>
-            <li><a>occāsus, occāsūs – m – setting, downfall</a></li>
-            <li><a>onus, oneris – n – burden</a></li>
-            <li><a>opus, operis – n – work</a></li>
-            <li><a>passus, passūs – m – pace</a></li>
-            <li><a>pōns, pontis – m – bridge</a></li>
-            <li><a>audax, audācis – bold, daring</a></li>
-            <li><a>fidēlis, fidēle – faithful</a></li>
-            <li><a>potēns, potentis – powerful, capable</a></li>
-            <li><a>cōgō, cōgere, coēgī, coāctus – compel, force</a></li>
-            <li><a>occīdō, occīdere, occīdī, occīsus – kill</a></li>
-            <li><a>perveniō, pervenīre, pervēnī, perventūrus – arrive, come through</a></li>
-            <li><a>reddō, reddere, reddīdī, reddītus – give back, return</a></li>
-            <li><a>trādō, trādere, trādīdī, trādītus – hand over, hand down, surrender</a></li>
-            <li><a>celeritās, celeritātis – f – speed, swiftness</a></li>
-            <li><a>dolor, dolōris – m – pain, grief, distress</a></li>
-            <li><a>lūx, lūcis – f – light</a></li>
-            <li><a>virtūs, virtūtis – f- courage, valor</a></li>
-            <li><a>aperio, aperire, aperui, apertus - open, disclose</a></li>
-            <li><a>discedo, discedere, discessi, discessurus - depart</a></li>
-            <li><a>opprimō, opprimere, oppressī, oppressus – overwhelm</a></li>
-            <li><a>persuadeo, persuadere, persuasi, persuasus - persuade (takes dat)</a></li>
-            <li><a>frūstrā – in vain</a></li>
-            <li><a>tandem – finally</a></li>
-            <li><a>umquam – ever</a></li>
-            <li><a>numquam - never</a></li>
-            <li><a>igitur - therefore</a></li>
-            <li><a>dux, ducis, m – leader</a></li>
-            <li><a>homō, hominis, m – man, human being</a></li>
-            <li><a>lēx, lēgis, f – law</a></li>
-            <li><a>mīles, mīlitis, m – soldier</a></li>
-            <li><a>pāx, pācis, f – peace</a></li>
-            <li><a>salūs, salūtis, f – health, safety</a></li>
-            <li><a>miser, misera, miserum – sad, unhappy, poor</a></li>
-            <li><a>moveō, movēre, mōvī, mōtus – move</a></li>
-            <li><a>petō, petere, petīvī, petītus – seek, ask for, attack</a></li>
-            <li><a>quī, quae, quod – who, which, whom</a></li>
-            <li><a>claudō, claudere, clausī, clausus - close</a></li>
-            <li><a>includō, includere, inclusī, inclusus - shut in, close in, enclose</a></li>
-            <li><a>currō, currere, cucurrī, cursūrus – run</a></li>
-            <li><a>iubeō, iubēre, iussī, iussus – order (used with acc and infinitive – order ____ to ____)</a></li>
-            <li><a>volō, velle, voluī – wish, want (irregular)</a></li>
-            <li><a>ante + acc – before, in front of</a></li>
-            <li><a>in + acc - into</a></li>
-            <li><a>inter + acc – between</a></li>
-            <li><a>intrā + acc – within</a></li>
-            <li><a>ob + acc – on account of</a></li>
-            <li><a>per + acc – through</a></li>
-            <li><a>propter + acc - on account of; because of</a></li>
-            <li><a>sub + acc – under</a></li>
-            <li><a>trāns + acc - across</a></li>
-            <li><a>carmen, carminis – n – song</a></li>
-            <li><a>scientia, scientiae – f – knowledge</a></li>
-            <li><a>hic, haec, hoc – this, these</a></li>
-            <li><a>ille, illa, illud – that, those</a></li>
-            <li><a>ipse, ipsa, ipsum - -self, the very (one)</a></li>
-            <li><a>is, ea, id – he, she, it, this, that</a></li>
-            <li><a>īdem, eadem, idem – the same</a></li>
-            <li><a>frangō, frangere, frēgī, fractus – break</a></li>
-            <li><a>perveniō, pervenīre, pervēnī, perventūrus – arrive</a></li>
-            <li><a>remittō, remittere, remīsī, remissus – send back, send again, return</a></li>
-            <li><a>audāx, audacis – bold</a></li>
-            <li><a>humilis, humile – humble, low</a></li>
-            <li><a>levis, leve – light</a></li>
-            <li><a>potēns, potentis – powerful</a></li>
-            <li><a>arx, arcis – f- citadel</a></li>
-            <li><a>fidēs, fideī – f – faith</a></li>
-            <li><a>(mīlle passūs – 1 mile (lit. a thousand paces; mīlia passuum – miles)</a></li>
-            <li><a>dīligens, dīligentis – careful, accurate</a></li>
-            <li><a>prūdens, prūdentis – skilled, aware</a></li>
-            <li><a>quī, quae, quod – who, which, that</a></li>
-
-          </ul>
-        </div>
-      </div>
-
-      <footer style="text-decoration: none;" id="footer">
-        <hr>
-        <p>Latin Dictionary/Notes</p>
-        <p>Email: schery004@gmail.com | <a class="text-decoration:none;" href="contact.html"><u>Contact</u></a> | <a
-            class="text-decoration:none;" href="login.html"><u>Login</u></a> </p>
-        <p>&copy;<script>
-            document.write(new Date().getFullYear())
-          </script> by latindictionarynotes.com</p>
-      </footer>
-
-    </div>
-    <script src="script.js"></script>
+  </div>
+  <script src="script.js"></script>
 </body>
 </main>
 
