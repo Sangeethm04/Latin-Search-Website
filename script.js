@@ -21,6 +21,9 @@ function myFunction() {
     }
   }
 }
+$(function() {
+  $('#header').load('headernav.html');
+});
 
 
 var liText = '', liList = $('#myidd li'), listForRemove = [];
