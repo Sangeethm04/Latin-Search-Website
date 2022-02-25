@@ -1,19 +1,17 @@
 
    
     .updates {
-      padding:15px;
+      padding:0.02px;
       text-align: center; 
       background-color: rgb(231, 231, 231); 
       font-family: 'Castoro', serif;
-       font-size: medium;
        border-radius: 8px;
        color:rgb(255, 0, 0);
-       font-weight: bold;
+
     }
 
-    .updates a{
+    .updates p{
       text-align: center; 
-      font-family: 'Castoro', serif;
        font-size:large;
        color:rgb(255, 0, 0);
        font-weight: bold;
