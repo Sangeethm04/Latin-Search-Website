@@ -38,9 +38,5 @@ $(liList).each(function () {
     
 $(listForRemove).each(function () { $(this).remove(); });
 
-$(function() {
-  $('#header'.load('headernav.html'))
-})
-
 
 
