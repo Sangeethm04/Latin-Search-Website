@@ -1,5 +1,3 @@
-
-
 function myFunction() {
   // Declare variables
   var input, filter, ul, li, a, i, txtValue;
@@ -22,20 +20,21 @@ function myFunction() {
   }
 }
 
-var liText = '', liList = $('#myidd li'), listForRemove = [];
+var liText = '',
+  liList = $('#myidd li'),
+  listForRemove = [];
 
 $(liList).each(function () {
-    
+
   var text = $(this).text();
 
-  if (liText.indexOf('|'+ text + '|') == -1)
-    liText += '|'+ text + '|';
+  if (liText.indexOf('|' + text + '|') == -1)
+    liText += '|' + text + '|';
   else
     listForRemove.push($(this));
-    
+
 });
-    
-$(listForRemove).each(function () { $(this).remove(); });
 
-
-
+$(listForRemove).each(function () {
+  $(this).remove();
+});
