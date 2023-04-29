@@ -440,6 +440,7 @@ a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 /* The subnavigation menu */
@@ -459,6 +460,7 @@ a {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  font-weight: bold;
 }
 
 /* Add a red background color to navigation links on hover */
@@ -484,6 +486,7 @@ a {
   float: left;
   color: white;
   text-decoration: none;
+  font-size: large;
 }
 
 /* Add a grey background color on hover */
